@@ -1,0 +1,67 @@
+YAIM_ROOT=/opt
+WN_LIST=${YAIM_ROOT}/glite/yaim/examples/wn-list.conf
+USERS_CONF=${YAIM_ROOT}/glite/yaim/examples/users.conf
+GROUPS_CONF=${YAIM_ROOT}/glite/yaim/examples/groups.conf
+
+SITE_NAME=my-site-name
+SITE_EMAIL="mail1[,mail2[,...]]"
+SITE_LAT=0.0 
+SITE_LONG=0.0
+
+USE_ARGUS=no
+ARGUS_PEPD_ENDPOINTS="https://pepd.example.org:8154/authz"
+
+MY_DOMAIN=localdomain
+
+CE_HOST=my-ce.$MY_DOMAIN
+CE_CPU_MODEL=cpu_model
+CE_CPU_VENDOR=vendor
+CE_CPU_SPEED=speed
+CE_OS=os_name
+CE_OS_RELEASE=x.y.z
+CE_OS_VERSION="version"
+CE_OS_ARCH=i686
+CE_MINPHYSMEM=number
+CE_MINVIRTMEM=number
+CE_PHYSCPU=number
+CE_LOGCPU=number
+CE_SMPSIZE=number
+CE_SI00=number
+CE_SF00=number
+CE_OUTBOUNDIP=FALSE
+CE_INBOUNDIP=FALSE
+CE_RUNTIMEENV="tag1 [tag2 [...]]"
+CE_CAPABILITY="CPUScalingReferenceSI00=value [Share=vo-name1:value [Share=vo-name2:value [...]]]"
+CE_OTHERDESCR="Cores=value[,Benchmark=value-HEP-SPEC06]" 
+
+BATCH_SERVER=$CE_HOST
+JOB_MANAGER=my_job_manager
+CE_BATCH_SYS=my_batch_system
+BATCH_LOG_DIR=my_batch_system_log_directory
+BATCH_VERSION=my_batch_system_version
+
+APEL_DB_PASSWORD="APELDB_PWD"
+WMS_HOST=my-wms.$MY_DOMAIN
+PX_HOST=my-px.$MY_DOMAIN
+MON_HOST=my-mon.$MY_DOMAIN
+FTS_SERVER_URL="https://fts.${MY_DOMAIN}:8443/path/glite-data-transfer-fts"
+DPM_HOST="my-dpm.$MY_DOMAIN"
+
+SE_LIST="SE1 SE2 SE3"
+SE_MOUNT_INFO_LIST="[SE1:export_dir1,mount_dir1 [SE2:export_dir2,mount_dir2 [...]]|none]"
+SE_GRIDFTP_LOGFILE=path_to_gridftp_logfile.log
+
+BDII_HOST=prod-bdii-01.pd.infn.it
+SITE_BDII_HOST=my-bdii.$MY_DOMAIN
+
+VOS="enmr.eu"
+
+QUEUES="test"
+TEST_GROUP_ENABLE="fqan1 [fqan2 [...]]"
+
+VO_ENMR_EU_SW_DIR=/cvmfs/wenmr.egi.eu
+VO_ENMR_EU_DEFAULT_SE=$SE_HOST
+VO_ENMR_EU_VOMS_SERVERS="'vomss://voms2.cnaf.infn.it:8443/voms/enmr.eu?/enmr.eu' 'vomss://voms-02.pd.infn.it:8443/voms/enmr.eu?/enmr.eu'"
+VO_ENMR_EU_VOMSES="'enmr.eu voms2.cnaf.infn.it 15014 /C=IT/O=INFN/OU=Host/L=CNAF/CN=voms2.cnaf.infn.it enmr.eu' 'enmr.eu voms-02.pd.infn.it 15014 /C=IT/O=INFN/OU=Host/L=Padova/CN=voms-02.pd.infn.it enmr.eu'"
+VO_ENMR_EU_VOMS_CA_DN="'/C=IT/O=INFN/CN=INFN CA' '/C=IT/O=INFN/CN=INFN Certification Authority'"
+VO_ENMR_EU_WMS_HOSTS="prod-wms-01.pd.infn.it mb-enmr.chemie.uni-frankfurt.de"
