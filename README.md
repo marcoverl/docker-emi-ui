@@ -9,6 +9,7 @@ service docker start
 ```
 useradd -ms /bin/bash enmruser
 mkdir /home/enmruser/.globus
+scp yourusername@yourpc.domain:user*.pem /home/enmruser/.globus/
 chown enmruser.enmruser -R /home/enmruser
 ```
 - Build the docker image and run the container
