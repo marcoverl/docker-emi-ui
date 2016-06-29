@@ -12,12 +12,18 @@ mkdir /home/enmruser/.globus
 scp yourusername@yourpc.domain:user*.pem /home/enmruser/.globus/
 chown enmruser.enmruser -R /home/enmruser
 ```
-- Build the docker image and run the container
+- Now you have two options:
+1) pull the image and run it:
+```
+docker pull marcoverl/docker-emi-ui
+docker run -it -v /home/enmruser/.globus:/home/enmruser/.globus --name wenmr-ui marcoverl/docker-emi-ui
+```
+2) Build the docker image and run the container
 ```
 git clone https://github.com/marcoverl/docker-emi-ui
 cd docker-emi-ui
-docker build -t wenmr-emi-ui .
-docker run -it -v /home/enmruser/.globus:/home/enmruser/.globus wenmr-emi-ui
+docker build -t docker-emi-ui .
+docker run -it -v /home/enmruser/.globus:/home/enmruser/.globus --name wenmr-ui docker-emi-ui
 ```
 - You are logged as root, in case you need to install other packages. As enmruser you can then create your proxy and submit grid jobs
 ```
