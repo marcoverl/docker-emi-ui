@@ -13,12 +13,12 @@ scp yourusername@yourpc.domain:user*.pem /home/enmruser/.globus/
 chown enmruser.enmruser -R /home/enmruser
 ```
 - Now you have two options:
-1) pull the image and run it:
+-- pull the image and run the container:
 ```
 docker pull marcoverl/docker-emi-ui
 docker run -it -v /home/enmruser/.globus:/home/enmruser/.globus --name wenmr-ui marcoverl/docker-emi-ui
 ```
-2) Build the docker image and run the container
+--Build the docker image and run the container:
 ```
 git clone https://github.com/marcoverl/docker-emi-ui
 cd docker-emi-ui
