@@ -1,0 +1,8 @@
+[
+Executable    = "/bin/hostname";
+StdOutput     = "out.log";
+StdError      = "err.log";
+InputSandbox  = {"test-cream.jdl"};
+OutputSandbox = {"err.log","out.log"};
+Outputsandboxbasedesturi="gsiftp://localhost";
+]
