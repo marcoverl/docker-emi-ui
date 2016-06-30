@@ -1,5 +1,5 @@
 # docker-emi-ui
-## Dockerizing EMI UI how to:
+## How to use EMI UI docker container for enmr.eu VO:
 #### In a CentOS (or Ubuntu) server, as root, install and start docker-engine:
 ```
 yum install docker-engine -y (or apt-get install docker.io -y)
