@@ -21,7 +21,8 @@ RUN useradd -ms /bin/bash enmruser
 USER enmruser
 WORKDIR /home/enmruser
 RUN mkdir .globus
-COPY test.jdl test.jdl
+COPY test-wms.jdl test-wms.jdl
+COPY test-cream.jdl test-cream.jdl
 USER root
 WORKDIR /root
 
