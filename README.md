@@ -28,12 +28,16 @@ docker run -it -v /root/.globus:/home/enmruser/.globus --name wenmr-ui docker-em
 chown enmruser.enmruser -R /home/enmruser
 su - enmruser
 voms-proxy-init -voms enmr.eu
+#
 # testing jobsubmission via EMI-WMS
+#
 glite-wms-job-list-match -a test-wms.jdl
-glite-wms-job-submit -a -o jidw.txt test.jdl
+glite-wms-job-submit -a -o jidw.txt test-wms.jdl
 glite-wms-job-status -i jidw.txt
 glite-wms-job-output -i jidw.txt
+#
 # testing direct job submission to CREAM-CE
+#
 glite-ce-allowed-submission pbs-enmr.cerm.unifi.it:8443
 glite-ce-job-submit -a -o jidc.txt -r pbs-enmr.cerm.unifi.it:8443/cream-pbs-short test-cream.jdl
 glite-ce-job-status -i jidc.txt
