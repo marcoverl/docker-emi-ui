@@ -1,0 +1,5 @@
+Executable="/bin/hostname";
+StdOutput="out.log";
+StdError="err.log";
+InputSandbox={"test-wms.jdl"};
+OutputSandbox={"out.log", "err.log"};

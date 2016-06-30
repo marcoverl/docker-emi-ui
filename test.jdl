@@ -1,5 +1,0 @@
-Executable="/bin/hostname";
-StdOutput="stdout.log";
-StdError="stderr.log";
-InputSandbox={"test.jdl"};
-OutputSandbox={"stdout.log", "stderr.log"};
