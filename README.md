@@ -1,8 +1,8 @@
 # docker-emi-ui
 ## Dockerizing EMI UI how to:
-#### In a CentOS6 VM, as root, install and start docker-engine:
+#### In a CentOS (or Ubuntu) server, as root, install and start docker-engine:
 ```
-yum install docker-engine -y
+yum install docker-engine -y (or apt-get install docker.io -y)
 service docker start
 ```
 #### Copy your usercert.pem and userkey.pem under /root/.globus/ (or where else you prefer)
