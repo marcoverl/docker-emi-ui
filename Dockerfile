@@ -8,7 +8,7 @@ USER root
 WORKDIR /root
 RUN  rpm --import http://repository.egi.eu/sw/production/umd/UMD-RPM-PGP-KEY
 RUN yum update -y && yum install -y yum-priorities wget openssh-clients gcc
-RUN yum install -y http://repository.egi.eu/sw/production/umd/3/sl6/x86_64/updates/umd-release-3.0.1-1.el6.noarch.rpm
+RUN yum install -y http://repository.egi.eu/sw/production/umd/3/sl6/x86_64/updates/umd-release-3.14.4-1.el6.noarch.rpm
 RUN yum install -y --nogpgcheck ca-policy-egi-core emi-ui voms-clients
 # Configuring EMI UI
 COPY site-info.def site-info.def
