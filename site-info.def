@@ -63,5 +63,5 @@ VO_ENMR_EU_SW_DIR=/cvmfs/wenmr.egi.eu
 VO_ENMR_EU_DEFAULT_SE=$SE_HOST
 VO_ENMR_EU_VOMS_SERVERS="'vomss://voms2.cnaf.infn.it:8443/voms/enmr.eu?/enmr.eu' 'vomss://voms-02.pd.infn.it:8443/voms/enmr.eu?/enmr.eu'"
 VO_ENMR_EU_VOMSES="'enmr.eu voms2.cnaf.infn.it 15014 /C=IT/O=INFN/OU=Host/L=CNAF/CN=voms2.cnaf.infn.it enmr.eu' 'enmr.eu voms-02.pd.infn.it 15014 /C=IT/O=INFN/OU=Host/L=Padova/CN=voms-02.pd.infn.it enmr.eu'"
-VO_ENMR_EU_VOMS_CA_DN="'/C=IT/O=INFN/CN=INFN CA' '/C=IT/O=INFN/CN=INFN Certification Authority'"
-VO_ENMR_EU_WMS_HOSTS="prod-wms-01.pd.infn.it mb-enmr.chemie.uni-frankfurt.de"
+VO_ENMR_EU_VOMS_CA_DN="'/C=IT/O=INFN/CN=INFN Certification Authority' '/C=IT/O=INFN/CN=INFN Certification Authority'"
+VO_ENMR_EU_WMS_HOSTS="prod-wms-01.pd.infn.it wms-enmr.cerm.unifi.it"
